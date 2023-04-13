@@ -1,10 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
-const formacao = ({ navigation }) => {
+const Formacao = ({ navigation }) => {
     return (
         <View>
             <Text>Formação</Text>
+            
+            <Button 
+                title="Voltar"
+                onPress={ () => navigation.goBack() }
+            />
         </View>
     );
 }
@@ -24,4 +29,4 @@ const styles = StyleSheet.create({
   });
   
 
-export default formacao;
+export default Formacao;
